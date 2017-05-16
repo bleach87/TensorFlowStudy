@@ -3,6 +3,9 @@
 - 작성자 : 박기남 (<kinam.park28@gmail.com>)
 - 최초 작성일 : 2017.04.25
 - 최종 수정일 : 2017.05.15
+- Version
+    - Python v2.7
+    - TensorFlow v1.0.1
 ---
 ### 목차
 
