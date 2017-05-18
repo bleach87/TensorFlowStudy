@@ -18,6 +18,17 @@
     - 6장. 병렬처리
     - 7장. 마치며
 
+* "모두의 딥러닝", 김성훈 교수 강의,
+    - 1장. TensorFlow Basic
+    - 2장. Linear Regression
+    - 3장. Linear Regression & Cost Function
+    - 4장. multi-variable linear regression
+    [- 5장. Logistic Classification](https://github.com/bleach87/TensorFlowStudy/blob/master/doc/logistic_classification.mdown)
+    - 6장. Softmax
+    - 7장. MNIST
+    - 8장. DeepLearning Basic.
+
+
 ---
 ### Reference
 
