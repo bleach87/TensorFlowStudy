@@ -6,7 +6,7 @@
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 </head>
-
+<body>
 # Logistic(regression) Classification
 
 #### Binary Classification
@@ -101,3 +101,4 @@ $$W := W - \alpha\frac{\partial}{\partial W}cost(W)$$
                            feed_dict={X: x_data, Y: y_data})
         print("\nHypothesis: ", h, "\nCorrect (Y): ", c, "\nAccuracy: ", a)
 
+</body>
