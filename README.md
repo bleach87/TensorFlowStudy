@@ -22,8 +22,8 @@
     - 1장. TensorFlow Basic
     - 2장. Linear Regression
     - 3장. Linear Regression & Cost Function
-    - 4장. multi-variable linear regression
-    [- 5장. Logistic Classification](https://github.com/bleach87/TensorFlowStudy/blob/master/doc/logistic_classification.mdown)
+    - [4장. multi-variable linear regression](https://github.com/bleach87/TensorFlowStudy/blob/master/doc/multi_variable_linear_regression.mdown)
+    - [5장. Logistic Classification](https://github.com/bleach87/TensorFlowStudy/blob/master/doc/logistic_classification.mdown)
     - 6장. Softmax
     - 7장. MNIST
     - 8장. DeepLearning Basic.
