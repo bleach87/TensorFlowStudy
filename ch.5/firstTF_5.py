@@ -65,7 +65,7 @@ def bias_variable(shape):
     initial = tf.constant(0.1, shape=shape)
     return tf.Variable(initial)
 
-# 합성곱 계층과 풀링 계층을 구성하기 위해 여러 개의 매개벼수를 정해야 함
+# 합성곱 계층과 풀링 계층을 구성하기 위해 여러 개의 매개변수를 정해야 함
 # 각 차원의 방향으로의 스트라이드(슬라이딩 윈도가 한번에 이동하는 크기)를 1로 하고 패딩은 'SAME'으로 지정
 # 풀링은 2x2 크기의 맥스 풀링
 def conv2d(x,W):
@@ -138,15 +138,15 @@ b_fc2 = bias_variable([10])
 y_conv = tf.nn.softmax(tf.matmul(h_fc1_drop,W_fc2) + b_fc2)
 
 # 경사하강법 최적화 알고리즘을 ADAM 최적화 알고리즘으로 바꿔서 구현
-# 드롭아웃 계층의 확률을 조절하는 추가 매개변수 Keep_prob도 feed_dict 인수를 통해 전달
+# 드롭아웃 계층의 확률을 조절하는 추가 매개변수 keep_prob도 feed_dict 인수를 통해 전달
 cross_entropy = -tf.reduce_sum(y_*tf.log(y_conv))
 train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y_conv,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
 
 sess = tf.Session()
-
 sess.run(tf.global_variables_initializer())
+
 for i in range(1000):
     batch = mnist.train.next_batch(100)
     if i%100 == 0:
@@ -154,4 +154,3 @@ for i in range(1000):
         print("step %d, training accuracy %g"%(i, train_accuracy))
     sess.run(train_step, feed_dict={x:batch[0], y_:batch[1], keep_prob:0.5})
     print("test accuracy %g"% sess.run(accuracy,feed_dict={x:mnist.test.images, y_:mnist.test.labels, keep_prob:1.0}))
-

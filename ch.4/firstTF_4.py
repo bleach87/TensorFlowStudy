@@ -33,10 +33,10 @@ for i in range(1000):
     sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
 
 
-correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
-print correct_prediction
 
-print tf.argmax(y,1)
+correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
+# print correct_prediction
+# print tf.argmax(y,1)
 
 print tf.cast(correct_prediction, "float")
 
