@@ -78,8 +78,6 @@ for i in range(1000):
 # save
 save_path = saver.save(sess,"model.ckpt")
 print "Model saved in file : ",save_path
-
-
 print("test accuracy %g"% sess.run(accuracy, feed_dict={x:mnist.test.images, y_:mnist.test.labels, keep_prob:1.0}))
 
 sess.close()
