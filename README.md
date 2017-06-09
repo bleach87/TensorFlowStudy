@@ -14,7 +14,7 @@
     - [2장. 선형회기분석](https://github.com/bleach87/TensorFlowStudy/tree/master/ch.2)
     - [3장. 군집화](https://github.com/bleach87/TensorFlowStudy/tree/master/ch.3)
     - [4장. 단일계층신경망](https://github.com/bleach87/TensorFlowStudy/tree/master/ch.4)
-    - 5장. 다층 계층 신경망
+    - [5장. 다층 계층 신경망](https://github.com/bleach87/TensorFlowStudy/tree/master/ch.5)
     - 6장. 병렬처리
     - 7장. 마치며
 
